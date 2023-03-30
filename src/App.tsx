@@ -77,7 +77,7 @@ function App() {
 export default App;
 
 const MainDiv = styled.div`
-  height: 800px;
+   height: 800px;
   background: #afaeae;
   border-radius: 10px;
   margin-bottom: 50px;
@@ -86,6 +86,16 @@ const MainDiv = styled.div`
   justify-content: space-between;
   gap: 2%;
   padding: 2%;
+  
+  @media (max-width: 420px) {
+    flex-direction: column;
+    padding: 10px;
+    justify-content: flex-start;
+    gap: 0;
+   ;
+    
+    
+  }
 `;
 
 const Div1 = styled.div`
@@ -97,6 +107,12 @@ const Div1 = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3%;
+  @media (max-width:420px){
+    gap: 0;
+    margin-bottom: 15px;
+    width: 95%;
+  }
+ 
 `;
 
 const Item = styled.div<any>`
@@ -108,6 +124,10 @@ const Item = styled.div<any>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width:420px) {
+    margin-top: 10px;
+    height: 70px;
+  }
 `;
 
 
