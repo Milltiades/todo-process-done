@@ -77,7 +77,7 @@ function App() {
 export default App;
 
 const MainDiv = styled.div`
-   height: 800px;
+  height: auto;
   background: #afaeae;
   border-radius: 10px;
   margin-bottom: 50px;
@@ -92,6 +92,7 @@ const MainDiv = styled.div`
     padding: 10px;
     justify-content: flex-start;
     gap: 0;
+    height: auto;
    ;
     
     
@@ -107,6 +108,7 @@ const Div1 = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3%;
+  /* margin-bottom: 15px; */
   @media (max-width:420px){
     gap: 0;
     margin-bottom: 15px;
@@ -124,6 +126,7 @@ const Item = styled.div<any>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
   @media (max-width:420px) {
     margin-top: 10px;
     height: 70px;
